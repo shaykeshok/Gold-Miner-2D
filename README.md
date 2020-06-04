@@ -35,8 +35,8 @@ Responsible for running the player's animations
 
 # photos
 
-<img src="https://github.com/shaykeshok/unity-Ex3/blob/master/images/Capture2.PNG" width="400px" height="200px">
+<img src="https://github.com/shaykeshok/Gold-Miner-2D/blob/master/2.PNG" width="400px" height="200px">
 
-<img src="https://github.com/shaykeshok/unity-Ex3/blob/master/images/Capture2.PNG" width="400px" height="200px">
+<img src="https://github.com/shaykeshok/Gold-Miner-2D/blob/master/menu.PNG" width="400px" height="200px">
 
-Link to the game: <a href="" target="_blank"
+Link to the game: <a href="https://shaykeshok.itch.io/gold-minner" target="_blank">Gold miner<\a>
