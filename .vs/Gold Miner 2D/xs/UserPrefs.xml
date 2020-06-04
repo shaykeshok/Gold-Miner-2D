@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{4D28952B-E285-4454-301D-FEAAB81460D2}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player Scripts/PlayerAnimation.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Hook Scripts/HookMovement.cs" Line="98" Column="17" />
+      <File FileName="Assets/Scripts/Hook Scripts/RopeRenderer.cs" Line="60" Column="54" />
+      <File FileName="Assets/Scripts/Helper Scripts/TagManager.cs" Line="14" Column="52" />
+      <File FileName="Assets/Scripts/Hook Scripts/HookScript.cs" Line="62" Column="54" />
+      <File FileName="Assets/Scripts/Item Scripts/ItemScript.cs" Line="9" Column="5" />
+      <File FileName="Assets/Scripts/Helper Scripts/SoundManager.cs" Line="85" Column="27" />
+      <File FileName="Assets/Scripts/Helper Scripts/GameplayManager.cs" Line="75" Column="45" />
+      <File FileName="Assets/Scripts/Player Scripts/PlayerAnimation.cs" Line="50" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
