@@ -39,4 +39,4 @@ Responsible for running the player's animations
 
 <img src="https://github.com/shaykeshok/Gold-Miner-2D/blob/master/menu.PNG" width="400px" height="200px">
 
-Link to the game: <a href="https://shaykeshok.itch.io/gold-minner" target="_blank">Gold miner<\a>
+Link to the game: <a href="https://shaykeshok.itch.io/gold-minner" target="_blank">Gold miner</a>
