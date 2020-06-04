@@ -35,8 +35,8 @@ Responsible for running the player's animations
 
 # photos
 
-<img src="" target="_blank"/>
+<img src="https://github.com/shaykeshok/unity-Ex3/blob/master/images/Capture2.PNG" width="400px" height="200px">
 
-<img src="" />
+<img src="https://github.com/shaykeshok/unity-Ex3/blob/master/images/Capture2.PNG" width="400px" height="200px">
 
 Link to the game: <a href="" target="_blank"
