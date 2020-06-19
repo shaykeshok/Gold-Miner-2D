@@ -12,7 +12,7 @@ public class GameplayManager : MonoBehaviour {
     [SerializeField]
     private Text countdownText;
 
-    public int countdownTimer = 60;
+    public int countdownTimer = 100;
 
     [SerializeField]
     private Text scoreText;
@@ -89,7 +89,8 @@ public class GameplayManager : MonoBehaviour {
         if(scoreCount >= 100) {
             StopCoroutine("Countdown");
             SoundManager.instance.GameEnd();
-            StartCoroutine(RestartGame(1182));
+            //StartCoroutine(RestartGame(1182));
+            SceneManager.LoadScene(3);
         }
 
     }
