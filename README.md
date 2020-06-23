@@ -52,8 +52,6 @@ Responsible for the redirect of scene in the game.
 
 # photos
 
-<img src="https://github.com/shaykeshok/Gold-Miner-2D/blob/master/2.PNG" width="400px" height="200px">
-
 <img src="https://github.com/shaykeshok/Gold-Miner-2D/blob/master/menu.PNG" width="400px" height="200px">
 
 <img src="https://github.com/shaykeshok/Gold-Miner-2D/blob/master/Capturesdf.PNG" width="400px" height="200px">
