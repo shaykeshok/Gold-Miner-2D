@@ -52,8 +52,11 @@ Responsible for the redirect of scene in the game.
 
 # Video
 
-<iframe width="420" height="345" src="https://youtu.be/wipXZ2D1j9g">
-</iframe>
+<video width="320" height="240" controls>
+  <source src="https://github.com/shaykeshok/Gold-Miner-2D/blob/master/WhatsApp%20Video%202020-06-23%20at%2018.21.45.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 
 # photos
 
