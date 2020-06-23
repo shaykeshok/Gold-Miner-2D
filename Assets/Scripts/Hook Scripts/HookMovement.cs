@@ -5,7 +5,7 @@ using UnityEngine;
 public class HookMovement : MonoBehaviour {
 
     // rotation Z
-    public float min_Z = -55f, max_Z = 55f;
+    public float min_Z = -57f, max_Z = 57f;
     public float rotate_Speed = 5f;
 
     private float rotate_Angle;
@@ -15,10 +15,12 @@ public class HookMovement : MonoBehaviour {
     public float move_Speed = 3f;
     private float initial_Move_Speed;
 
-    public float min_Y = -2.5f;
+    public float min_Y = -3.9f;
     private float initial_Y;
 
     private bool moveDown;
+
+    public bool catchItem = false;
 
     // FOR LINE RENDERER
     private RopeRenderer ropeRenderer;
@@ -91,10 +93,13 @@ public class HookMovement : MonoBehaviour {
     void MoveRope() {
 
         if (canRotate)
+        {
+            catchItem = false;
             return;
+        }
 
         if(!canRotate) {
-
+            
             Vector3 temp = transform.position;
 
             if(moveDown) {
@@ -137,6 +142,7 @@ public class HookMovement : MonoBehaviour {
     // במידה ונתפס עצם בHook
     public void HookAttachedItem() {
         moveDown = false;
+        catchItem = true;
     }
 
 } // class

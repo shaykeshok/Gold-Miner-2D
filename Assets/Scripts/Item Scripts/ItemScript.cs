@@ -8,6 +8,8 @@ public class ItemScript : MonoBehaviour {
 
     public int scoreValue;
 
+    public string itemTag;
+
     void OnDisable() {  
         GameplayManager.instance.DisplayScore(scoreValue);
     }

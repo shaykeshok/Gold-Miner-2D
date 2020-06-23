@@ -663,8 +663,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15, y: 300}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: -62, y: -33.4}
+  m_SizeDelta: {x: 739.8469, y: 542.30676}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &669992491
 MonoBehaviour:
@@ -685,29 +685,46 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The goal of the game is to collect the elements that will help you to
-    formulate a formula whose solution is the number found at each stage in the white
-    circle above the player.
+  m_text: 'The goal of the game is to collect all the elements that help solve the
+    equation in order to arrive at the equation and the solution that is at the top
+    of each step in the orange square.
 
-    Once you take all the elements that help you get
-    to the formula whose solution is the number, then move on to the next step.
+    There is only one way to solve the formula
+    at each stage. The equation has a single solution with a certain number of elements.
 
-    If
-    you take an element that does not help you solve the game you will reduce 10
-    seconds from the time of the game.
+    The
+    amount of elements needed also appears in the equation.
 
-    Every element earns you money.
+    The order of the
+    elements assembly does not matter.
 
-    Each
-    element has its own difficulty in picking it up
+    When a correct element is collected that
+    helps solve the equation, it will appear in the equation at the top of the step.
 
-    To start the game you need
-    to click on the ''play'' button. After it the game will start.
+    When
+    other element collections are incorrect, the phase time will be reduced by 10
+    seconds.
 
-    In the game
-    you need to click on the mouse if you want to throw away the rope.
+    Once you take all the elements that help to get to the equation,
+    move on to the next step.
 
-'
+    For each element that collections (whether or
+    not they help solve the equation) receive a sum of money.
+
+    Each of the elements
+    has its own difficulty to pick it up
+
+    To start the game you need to click
+    the Play button. After that the game will start.
+
+    In the game you have to
+    click the mouse if you want to throw the rope.
+
+    With the money accumulated
+    in the game you can buy in a store that is in between the stages.
+
+    The store
+    has enhancements to help you get through the steps easier.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -752,7 +769,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 82
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -773,15 +790,15 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 48.929443, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 669992491}
-    characterCount: 668
+    characterCount: 1211
     spriteCount: 0
-    spaceCount: 134
-    wordCount: 134
+    spaceCount: 231
+    wordCount: 232
     linkCount: 0
-    lineCount: 18
+    lineCount: 22
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -1867,8 +1884,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 289, y: 35}
-  m_SizeDelta: {x: 400, y: 690.1}
+  m_AnchoredPosition: {x: 170, y: 35}
+  m_SizeDelta: {x: 638.0896, y: 690.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1654735133
 MonoBehaviour:

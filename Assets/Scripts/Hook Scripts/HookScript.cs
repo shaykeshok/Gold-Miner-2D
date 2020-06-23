@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HookScript : MonoBehaviour {
+public class HookScript : MonoBehaviour
+{
 
     [SerializeField]
     private Transform itemHolder;
+
+    public static string itemValue = "";
 
     private bool itemAttached;
 
@@ -13,63 +16,74 @@ public class HookScript : MonoBehaviour {
 
     private PlayerAnimation playerAnim;
 
-    void Awake() {
+    void Awake()
+    {
         hookMovement = GetComponentInParent<HookMovement>();
         playerAnim = GetComponentInParent<PlayerAnimation>();
     }
 
     //כניסה של טריגר
-    void OnTriggerEnter2D(Collider2D target) {
-
-        if(target.tag == Tags.SMALL_GOLD || target.tag == Tags.MIDDLE_GOLD ||
-            target.tag == Tags.LARGE_GOLD || target.tag == Tags.LARGE_STONE ||
-            target.tag == Tags.MIDDLE_STONE) {
-
-            itemAttached = true;
-
-            target.transform.parent = itemHolder;
-            target.transform.position = itemHolder.position;
-
-            hookMovement.move_Speed = target.GetComponent<ItemScript>().hook_Speed;
-
-            hookMovement.HookAttachedItem();
-
-            // אנימציית שחקן
-            playerAnim.PullingItemAnimation();
-
+    void OnTriggerEnter2D(Collider2D target)
+    {
+        if (!hookMovement.catchItem)
+        {
             if (target.tag == Tags.SMALL_GOLD || target.tag == Tags.MIDDLE_GOLD ||
-                target.tag == Tags.LARGE_GOLD) {
+                target.tag == Tags.LARGE_GOLD || target.tag == Tags.LARGE_STONE ||
+                target.tag == Tags.MIDDLE_STONE)
+            {
+                itemValue = target.GetComponent<ItemScript>().itemTag;
+                itemAttached = true;
 
-                 SoundManager.instance.HookGrab_Gold();
+                target.transform.parent = itemHolder;
+                target.transform.position = itemHolder.position;
+                if (Market.hasPower)
+                    hookMovement.move_Speed = target.GetComponent<ItemScript>().hook_Speed + 1f;
+                else
+                    hookMovement.move_Speed = target.GetComponent<ItemScript>().hook_Speed;
 
-            } else if (target.tag == Tags.MIDDLE_STONE || target.tag == Tags.LARGE_STONE) {
+                hookMovement.HookAttachedItem();
 
-                 SoundManager.instance.HookGrab_Stone();
+                // אנימציית שחקן
+                playerAnim.PullingItemAnimation();
+
+                if (target.tag == Tags.SMALL_GOLD || target.tag == Tags.MIDDLE_GOLD ||
+                    target.tag == Tags.LARGE_GOLD)
+                {
+
+                    SoundManager.instance.HookGrab_Gold();
+
+                }
+                else if (target.tag == Tags.MIDDLE_STONE || target.tag == Tags.LARGE_STONE)
+                {
+
+                    SoundManager.instance.HookGrab_Stone();
+
+                }
+
+                SoundManager.instance.PullSound(true);
 
             }
+        }
+            if (target.tag == Tags.DELIVER_ITEM)
+            {
 
-            SoundManager.instance.PullSound(true);
+                if (itemAttached)
+                {
 
-        } 
+                    itemAttached = false;
 
-        if(target.tag == Tags.DELIVER_ITEM) { 
+                    Transform objChild = itemHolder.GetChild(0);
 
-            if(itemAttached) {
+                    objChild.parent = null;
+                    objChild.gameObject.SetActive(false);
 
-                itemAttached = false;
+                    playerAnim.IdleAnimation();
+                    SoundManager.instance.PullSound(false);
 
-                Transform objChild = itemHolder.GetChild(0);
+                }
 
-                objChild.parent = null;
-                objChild.gameObject.SetActive(false);
-
-                playerAnim.IdleAnimation();
-                SoundManager.instance.PullSound(false);
-
-            }
-
-        } // deliver item
-
+            } // deliver item
+        
     }
 
 
