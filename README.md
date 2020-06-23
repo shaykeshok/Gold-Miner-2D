@@ -50,10 +50,18 @@ Responsible for the market of the game.
 sceneFader component:
 Responsible for the redirect of scene in the game.
 
+# Video
+
+Click <a href="https://youtu.be/wipXZ2D1j9g" target="_blank">here</a> to see the video in youtube
+
 # photos
 
-<img src="https://github.com/shaykeshok/Gold-Miner-2D/blob/master/2.PNG" width="400px" height="200px">
-
 <img src="https://github.com/shaykeshok/Gold-Miner-2D/blob/master/menu.PNG" width="400px" height="200px">
+
+<img src="https://github.com/shaykeshok/Gold-Miner-2D/blob/master/Capturesdf.PNG" width="400px" height="200px">
+
+<img src="https://github.com/shaykeshok/Gold-Miner-2D/blob/master/Captsure.PNG" width="400px" height="200px">
+
+<img src="https://github.com/shaykeshok/Gold-Miner-2D/blob/master/Capasfasfture.PNG" width="400px" height="200px">
 
 Link to the game: <a href="https://shaykeshok.itch.io/gold-minner" target="_blank">Gold miner</a>
