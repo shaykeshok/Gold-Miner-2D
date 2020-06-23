@@ -50,6 +50,11 @@ Responsible for the market of the game.
 sceneFader component:
 Responsible for the redirect of scene in the game.
 
+# Video
+
+<iframe width="420" height="345" src="https://youtu.be/wipXZ2D1j9g">
+</iframe>
+
 # photos
 
 <img src="https://github.com/shaykeshok/Gold-Miner-2D/blob/master/menu.PNG" width="400px" height="200px">
