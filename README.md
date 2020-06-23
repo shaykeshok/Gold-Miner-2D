@@ -52,11 +52,7 @@ Responsible for the redirect of scene in the game.
 
 # Video
 
-<video width="320" height="240" controls>
-  <source src="https://github.com/shaykeshok/Gold-Miner-2D/blob/master/WhatsApp%20Video%202020-06-23%20at%2018.21.45.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
+Click <a href="https://youtu.be/wipXZ2D1j9g" target="_blank">here</a> to see the video in youtube
 
 # photos
 
