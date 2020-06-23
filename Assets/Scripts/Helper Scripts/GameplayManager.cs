@@ -50,10 +50,7 @@ public class GameplayManager : MonoBehaviour
     {
         startLevel = true;
         sumScoreInThisLvl = 0f;
-        level1 = 0;
-        level2 = 0;
-        level3 = 0;
-        level4 = 0;
+
         //level5 = 0;
         //level6 = 0;
         //formula(false);
@@ -75,21 +72,19 @@ public class GameplayManager : MonoBehaviour
     private void showOperators()
     {
         GameObject plus = GameObject.Find("plus");
-        GameObject mult = GameObject.Find("mult");
         GameObject plus2 = GameObject.Find("plus2");
+        GameObject mult = GameObject.Find("mult");
         GameObject minus = GameObject.Find("minus");
         GameObject divide = GameObject.Find("divide");
+        GameObject mult2 = GameObject.Find("mult2");
 
         switch (SceneManager.GetActiveScene().buildIndex)
         {
             case 1:
                 //"plus":
                 plus.GetComponent<Text>().enabled = true;
-                level1++;
                 //"mult":
                 mult.GetComponent<Text>().enabled = true;
-                level1++;
-
                 break;
             case 2:
                 //"plus":
@@ -111,7 +106,16 @@ public class GameplayManager : MonoBehaviour
                 //"divide":
                 divide.GetComponent<Text>().enabled = true;
                 break;
-
+            case 4:
+                //"plus":
+                plus.GetComponent<Text>().enabled = true;
+                //"mult2":
+                mult2.GetComponent<Text>().enabled = true;
+                //"mult":
+                mult.GetComponent<Text>().enabled = true;
+                //"divide":
+                divide.GetComponent<Text>().enabled = true;
+                break;
         }
     }
 
@@ -156,6 +160,10 @@ public class GameplayManager : MonoBehaviour
 
     private void resetLevel()
     {
+        level1 = 0;
+        level2 = 0;
+        level3 = 0;
+        level4 = 0;
         GameObject winTxt = GameObject.Find("winTxt");
         winTxt.GetComponent<Text>().enabled = false;
         GameObject lossTxt = GameObject.Find("loseTxt");
@@ -174,6 +182,7 @@ public class GameplayManager : MonoBehaviour
 
             //power.SetActive(false);
         }
+        resetFormula();
         if (Market.hasClow)
         {
             showOperators();
@@ -182,7 +191,6 @@ public class GameplayManager : MonoBehaviour
 
             //clow.SetActive(false);
         }
-        resetFormula();
     }
 
     public void DisplayScore(int scoreValue)
@@ -357,47 +365,47 @@ public class GameplayManager : MonoBehaviour
                     case "plus":
                         GameObject plus = GameObject.Find("plus");
                         plus.GetComponent<Text>().enabled = show;
-                        level2++;
+                        level3++;
                         break;
                     case "plus2":
                         GameObject plus2 = GameObject.Find("plus2");
                         plus2.GetComponent<Text>().enabled = show;
-                        level2++;
+                        level3++;
                         break;
                     case "mult":
                         GameObject mult = GameObject.Find("mult");
                         mult.GetComponent<Text>().enabled = show;
-                        level2++;
+                        level3++;
                         break;
                     case "divide":
                         GameObject divide = GameObject.Find("divide");
                         divide.GetComponent<Text>().enabled = show;
-                        level2++;
+                        level3++;
                         break;
                     case "nine":
                         GameObject nine = GameObject.Find("nine");
                         nine.GetComponent<Text>().enabled = show;
-                        level2++;
+                        level3++;
                         break;
                     case "two":
                         GameObject two = GameObject.Find("two");
                         two.GetComponent<Text>().enabled = show;
-                        level2++;
+                        level3++;
                         break;
                     case "eight":
                         GameObject eight = GameObject.Find("eight");
                         eight.GetComponent<Text>().enabled = show;
-                        level2++;
+                        level3++;
                         break;
                     case "seven":
                         GameObject seven = GameObject.Find("seven");
                         seven.GetComponent<Text>().enabled = show;
-                        level2++;
+                        level3++;
                         break;
                     case "six":
                         GameObject six = GameObject.Find("six");
                         six.GetComponent<Text>().enabled = show;
-                        level2++;
+                        level3++;
                         break;
                 }
                 break;
@@ -408,47 +416,47 @@ public class GameplayManager : MonoBehaviour
                     case "plus":
                         GameObject plus = GameObject.Find("plus");
                         plus.GetComponent<Text>().enabled = show;
-                        level2++;
+                        level4++;
                         break;
                     case "mult2":
                         GameObject mult2 = GameObject.Find("mult2");
                         mult2.GetComponent<Text>().enabled = show;
-                        level2++;
+                        level4++;
                         break;
                     case "mult":
                         GameObject mult = GameObject.Find("mult");
                         mult.GetComponent<Text>().enabled = show;
-                        level2++;
+                        level4++;
                         break;
                     case "divide":
                         GameObject divide = GameObject.Find("divide");
                         divide.GetComponent<Text>().enabled = show;
-                        level2++;
+                        level4++;
                         break;
                     case "nine":
                         GameObject nine = GameObject.Find("nine");
                         nine.GetComponent<Text>().enabled = show;
-                        level2++;
+                        level4++;
                         break;
                     case "two":
                         GameObject two = GameObject.Find("two");
                         two.GetComponent<Text>().enabled = show;
-                        level2++;
+                        level4++;
                         break;
                     case "nine2":
                         GameObject nine2 = GameObject.Find("nine2");
                         nine2.GetComponent<Text>().enabled = show;
-                        level2++;
+                        level4++;
                         break;
                     case "seven":
                         GameObject seven = GameObject.Find("seven");
                         seven.GetComponent<Text>().enabled = show;
-                        level2++;
+                        level4++;
                         break;
                     case "five":
                         GameObject five = GameObject.Find("five");
                         five.GetComponent<Text>().enabled = show;
-                        level2++;
+                        level4++;
                         break;
                 }
                 break;
